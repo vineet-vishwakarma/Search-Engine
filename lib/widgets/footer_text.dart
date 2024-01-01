@@ -10,7 +10,7 @@ class FooterText extends StatelessWidget {
       onPressed: () {},
       child: Text(
         title,
-        style: const TextStyle(color: Color(0xff70757a)),
+        style: const TextStyle(color: Color.fromARGB(255, 186, 186, 186)),
       ),
     );
   }
