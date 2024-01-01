@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:search_engine_google_clone/colors.dart';
@@ -42,7 +44,6 @@ class WebScreenLayout extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {},
-            // ignore: deprecated_member_use
             icon: SvgPicture.asset(
               'assets/images/more-apps.svg',
               color: primaryColor,
