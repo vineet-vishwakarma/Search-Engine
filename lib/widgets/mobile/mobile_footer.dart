@@ -8,6 +8,12 @@ class MobileFooter extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Wrap(
       children: [
+        FooterText(title: 'Privacy'),
+        SizedBox(width: 10),
+        FooterText(title: 'Terms'),
+        SizedBox(width: 10),
+        FooterText(title: 'Settings'),
+        SizedBox(width: 10),
         FooterText(title: 'About'),
         SizedBox(width: 10),
         FooterText(title: 'Advertising'),
@@ -15,12 +21,6 @@ class MobileFooter extends StatelessWidget {
         FooterText(title: 'Business'),
         SizedBox(width: 10),
         FooterText(title: 'How Search Works'),
-        SizedBox(width: 10),
-        FooterText(title: 'Privacy'),
-        SizedBox(width: 10),
-        FooterText(title: 'Terms'),
-        SizedBox(width: 10),
-        FooterText(title: 'Settings'),
         SizedBox(width: 10),
       ],
     );
