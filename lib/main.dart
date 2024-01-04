@@ -3,12 +3,10 @@ import 'package:search_engine_google_clone/colors.dart';
 import 'package:search_engine_google_clone/responsive/mobile_screen_layout.dart';
 import 'package:search_engine_google_clone/responsive/responsive_layout_screen.dart';
 import 'package:search_engine_google_clone/responsive/web_screen_layout.dart';
-import 'package:search_engine_google_clone/screens/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -20,11 +18,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      // home: const ResponsiveLayoutScreen(
-      //   mobileScreenLayout: MobileScreenLayout(),
-      //   webScreenLayout: WebScreenLayout(),
-      // ),
-      home: const SearchScreen(),
+      home: const ResponsiveLayoutScreen(
+        mobileScreenLayout: MobileScreenLayout(),
+        webScreenLayout: WebScreenLayout(),
+      ),
     );
   }
 }

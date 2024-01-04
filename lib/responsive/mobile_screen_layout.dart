@@ -5,8 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:search_engine_google_clone/colors.dart';
 import 'package:search_engine_google_clone/widgets/mobile/mobile_footer.dart';
 import 'package:search_engine_google_clone/widgets/search.dart';
-import 'package:search_engine_google_clone/widgets/translation_buttons.dart';
-import 'package:search_engine_google_clone/widgets/web/search_buttons.dart';
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});
 
@@ -29,6 +27,7 @@ class MobileScreenLayout extends StatelessWidget {
           child: const DefaultTabController(
             length: 2,
             child: TabBar(
+              labelPadding: EdgeInsets.symmetric(horizontal :0),
               indicatorColor: blueColor,
               unselectedLabelColor: Colors.grey,
               labelColor: blueColor,
@@ -79,11 +78,11 @@ class MobileScreenLayout extends StatelessWidget {
                       SizedBox(
                         height: 20,
                       ),
-                      SearchButtons(),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      TranslationButtons(),
+                      // SearchButtons(),
+                      // SizedBox(
+                      //   height: 20,
+                      // ),
+                      // TranslationButtons(),
                     ],
                   ),
                   MobileFooter(),
